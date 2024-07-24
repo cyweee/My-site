@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+ }
+
+body {
+    background: url('img/header/header-cp.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.none{
+    display: none !important;
+}
+
+/* хедер */
+.header{
+    position:relative;
+    width: 100%;
+    /*можно писать не height: 100vh а height:auto*/
+    height: 100vh;
+    background-color:#4B2F5A;
+     background-image:url("./../img/header/header-cp.jpg"); 
+    background-size: cover;
+    background-position: center;
+   /*мешает разобраться*/
+    display: flex;
+    flex-direction: column; /*основаня ось y*/
+    justify-content:center;/*основная ось*/
+    align-items:center;/*поперечная ось*/
+}
+
+.header-title{
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+.header-subtitle{
+    margin: 0;
+    margin-bottom: 25;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+.header-arrow{
+    width: 48px;
+    height: 48px;
+    /* background-color: red; шоб было видно*/
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -24px;
+}
+
+/* портфолио */
+.portfolio{
+  background: darkseagreen;
+}
+
+.portfolio{
+  background-color:#9f547d;
+  padding-top: 10px;
+  padding-bottom: 40px;
+
+}
+
+.portfolio-header{
+      color: #000;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      line-height: 130%;
+}
+.portfolio-cards-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+    /* кста размещать(я хз как пишется я не русак)классы надо последевательно) */
+.card{
+      margin-bottom:30px;
+      height: 375px;
+      flex-shrink: 0;
+      width: 540px;
+      background: #FFF;
+      box-shadow: 0px 10px 40px 0px rgb(0, 0, 0);
+    transition: transform 0.2s ease-in;
+}
+.card:hover{
+transform: translateY(-15px);
+}
+
+
+.card-link{
+padding: 20px;
+display: block;
+color: #000;
+text-decoration: none;
+transition: transform 0.2s ease-in;
+}
+.card-link:hover{
+color: rgb(255, 234, 0)
+}
+
+.card:last-child{
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+
+}
+
+.card:nth-last-child(2) {
+      margin-bottom: 0;
+}
+
+.card-img{
+      margin-bottom: 20px;
+      max-width: 100%;      
+}
+.card-title{
+      margin: 0;
+      margin-bottom: 13;
+      /* color: #000; */
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 130%;
+}
+.card p{
+      /* color: #000; */
+      font-size: 16px;
+      line-height: 130%;
+}
+.footer{
+    padding-top: 70px;
+    padding-bottom: 25px;
+    background-color:#9f547d;
+    color:white;
+}
+/* .footerr{
+padding-top: 70px;
+padding-bottom: 250px;
+background-color:#9f547d;
+color:white;
+} */
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer col{
+flex-grow: 1;
+ max-width: 350px;
+}
+
+.footer-copyright{
+    color: #cda0e8;
+}
+
+.footer-copyright-name{
+    color: #cda0e8;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.footer-copyright p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-contacts{
+max-width: 350px;
+color: #cda0e8;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+}
+.footer-button{
+display: inline-block;
+border-radius: 50px;
+border: 3px solid #FFF;
+height: 50px;
+color:#cda0e8 ;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 11px;
+}
+.footer-contacts p{
+    margin: 15px 0;
+color: #cda0e8;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 130%; /* 20.8px */
+}
+.project{
+padding-top: 80px;
+padding-bottom: 120px;
+padding: 80px;
+background-color: #9f547d; width: 1900px;
+text-align: center;
+}
+
+.project-header{
+    margin: 0;
+    margin-bottom: 200px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 59.8px */
+}
+.project-description p {
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin: 10px 0; /* Отступы сверху и снизу */
+  }
+  
+  /* Стили для элемента с классом .project-description */
+  .project-description {
+    font-size: 18px;
+    color: #000000;
+  }
+.block{
+display: inline-block;
+border-radius: 50px;
+border: 3px solid #FFF;
+height: 50px;
+color:#ffffff ;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 11px;
+}
+.colored-div {
+width: 100%; /* Занимает всю ширину доступного пространства */
+height: 0vh; /* Занимает всю высоту экрана (viewport) */
+background-color: #9f547d; /* Задайте желаемый цвет фона (#00FF00 - зеленый) */
+color: #FFFFFF; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру */
+padding: 20px; /* Внутренний отступ для содержимого */
+}
+.centered-text-title {
+padding-top: 30px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /* Выравнивание по верхнему краю */
+align-items: center;
+height: 100vh; /* Занимает всю высоту экрана (viewport) */
+background-color: #9f547d; /* Задайте желаемый цвет фона (#00FF00 - зеленый) */
+color: #FFFFFF; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру внутри элемента */
+}
+.git-header-title{
+margin: 0;
+font-family: Montserrat;
+margin-bottom: 13;
+color: #000; 
+font-size: 50px;
+font-weight: 600;
+line-height: 130%;
+}
+/*.circle {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 2px solid #333;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+}*/
+.centered-text {
+display: flex;
+flex-direction: column;
+justify-content: center; /* Выравнивание по центру вертикально */
+align-items: center; /* Выравнивание по центру горизонтально */
+height: 100vh; /* Занимает всю высоту экрана (viewport) */
+background-color: #9f547d; /* Задайте желаемый цвет фона (#00FF00 - зеленый) */
+color: #FFFFFF; /* Цвет текста */
+text-align: center; /* Выравнивание текста по центру внутри элемента */
+}
+.rectangle {
+width: 400px;
+height: 227px;
+background-color: #FBE2FE;
+color: #332A2A;
+text-align: center;
+padding: 0px;
+border: 2px solid #000000;
+}
+.fullscreen {
+width: 100%;
+height: 835px;
+background-color: #9f547d;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.soc-header-title{
+margin: 0;
+font-family: Montserrat;
+margin-bottom: 13;
+color: #000; 
+font-size: 50px;
+font-weight: 600;
+line-height: 130%;
+}
+.dz-header-title{
+margin: 0;
+color: #000000;
+text-align: center;
+font-size: 30px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+}
+.subtitle{
+    margin: 0;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+}
+.colored-div2 {
+    width: 100%; /* Занимает всю ширину доступного пространства */
+    background-color: #9f547d; /* Задайте желаемый цвет фона (#00FF00 - зеленый) */
+    color: #FFFFFF; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Внутренний отступ для содержимого */
+}
+html, body {
+    background-color: #9f547d;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
